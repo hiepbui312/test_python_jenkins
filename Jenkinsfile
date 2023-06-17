@@ -11,8 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                sh '''
-                echo "doing build stuff.."
+                sh 'docker compose ps'
                 '''
             }
         }
